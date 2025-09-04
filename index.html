@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Editor</h1>
+        <div class="input-section">
+            <input type="file" id="uploadImage" accept="image/*">
+            <button id="capturePhoto">Capture Photo</button>
+            <select id="backgroundSelect">
+                <option value="green">Green Screen</option>
+                <option value="blue">Blue Sky</option>
+                <option value="beach">Beach</option>
+            </select>
+            <button id="applyBackground">Apply Background</button>
+            <button id="downloadImage">Download</button>
+        </div>
+        <div class="canvas-section">
+            <video id="video" autoplay style="display: none;"></video>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
